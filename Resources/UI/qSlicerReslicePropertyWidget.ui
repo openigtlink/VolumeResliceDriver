@@ -82,7 +82,7 @@
        <item>
         <widget class="QRadioButton" name="orientationRadioButton">
          <property name="text">
-          <string>Posiion and Orientation</string>
+          <string>Position and Orientation</string>
          </property>
         </widget>
        </item>
