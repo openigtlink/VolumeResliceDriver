@@ -26,7 +26,9 @@
 #include "qSlicerVolumeResliceDriverModuleWidget.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerVolumeResliceDriverModule, qSlicerVolumeResliceDriverModule);
+#if (QT_VERSION < QT_VERSION_CHECK(5, 0, 0))
+    Q_EXPORT_PLUGIN2(qSlicerVolumeResliceDriverModule, qSlicerVolumeResliceDriverModule);
+#endif
 
 //-----------------------------------------------------------------------------
 /// \ingroup Slicer_QtModules_VolumeResliceDriver

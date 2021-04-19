@@ -22,6 +22,7 @@
 #include "vtkMRMLLinearTransformNode.h"
 #include "vtkMRMLScalarVolumeNode.h"
 #include "vtkMRMLSliceNode.h"
+#include "vtkMRMLScene.h"
 
 // VTK includes
 #include <vtkCollection.h>

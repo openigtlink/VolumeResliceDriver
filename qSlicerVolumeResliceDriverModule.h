@@ -22,6 +22,7 @@
 #include "qSlicerLoadableModule.h"
 
 #include "qSlicerVolumeResliceDriverModuleExport.h"
+#include <QtGlobal>
 
 class qSlicerVolumeResliceDriverModulePrivate;
 
@@ -30,6 +31,9 @@ class Q_SLICER_QTMODULES_VOLUMERESLICEDRIVER_EXPORT qSlicerVolumeResliceDriverMo
   public qSlicerLoadableModule
 {
   Q_OBJECT
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
+      Q_PLUGIN_METADATA(IID "org.slicer.modules.loadable.qSlicerLoadableModule/1.0");
+#endif
   Q_INTERFACES(qSlicerLoadableModule);
 
 public:
